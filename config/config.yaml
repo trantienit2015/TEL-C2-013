@@ -1,0 +1,8 @@
+# Runtime parameters loaded by AgentRegistry and passed as Graph(config=...).
+# Static manifest fields (name/version/class/requires) live in agent.yaml.
+
+max_retry: 3
+top_k: 8
+score_threshold: 0.7
+hybrid_search: true
+timeout_s: 45

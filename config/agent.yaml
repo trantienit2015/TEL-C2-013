@@ -1,0 +1,19 @@
+# Agent Manifest - AgentRegistry static entry point.
+# Root-level keys only; `class` is a single dotted import path.
+# Runtime-tunable parameters live in config/config.yaml, not here.
+
+id: TEL-C2-013
+name: Telecom Network Incident Knowledge Base Q&A Agent
+namespace: tel
+version: 0.1.0
+enabled: true
+description: Telecom Network Incident Knowledge Base Q&A Agent
+class: src.graph.graph.IncidentKBQAAgent
+category: Cat 2
+industry: TEL
+base_type: RAGAgent
+generation_mode: deterministic
+required_trust_level: INTERNAL
+requires:
+  secrets: []
+  extras: []
